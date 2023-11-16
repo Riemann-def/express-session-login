@@ -1,17 +1,19 @@
 <html>
 <head>
     <link rel="stylesheet" href="app.css">
-</head>
+</head>  
 <body>
-<form action="/user" method="post">
+<form id="loginForm">
     <h2>Login</h2>
+    <div id="error" style="color: red;"></div>  
     <div class="input-field">
         <input type="text" name="username" id="username" placeholder="Enter Username">
     </div>
     <div class="input-field">
         <input type="password" name="password" id="password" placeholder="Enter Password">
     </div>
-    <input type="submit" value="LogIn">
+    <button id="boton" value="LogIn">Login</button>
 </form>
+<script src="form.js"></script>
 </body>
 </html>
